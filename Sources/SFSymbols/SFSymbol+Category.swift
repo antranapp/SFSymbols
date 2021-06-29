@@ -44,7 +44,7 @@ public extension SFSymbol{
             case .whatsNew:
                 return .sparkles
             case .multiColor:
-                if #available(iOS 14, *) {
+                if #available(iOS 14, macOS 14.0, *) {
                     return .paintpalette
                 } else{
                     return .eyedropper
@@ -66,7 +66,7 @@ public extension SFSymbol{
             case .human:
                 return .personCropCircle
             case .nature:
-                if #available(iOS 14, *) {
+                if #available(iOS 14, macOS 14.0, *) {
                     return .leaf
                 } else{
                     return .flame
@@ -88,7 +88,7 @@ public extension SFSymbol{
             case .shapes:
                 return .squareOnCircle
             case .arrows:
-                if #available(iOS 14, *) {
+                if #available(iOS 14, macOS 14.0, *) {
                     return .arrowForward
                 } else{
                     return .arrowUturnLeft

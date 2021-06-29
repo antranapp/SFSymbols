@@ -9,7 +9,7 @@ import Foundation
 
 public extension SFSymbol{
     static var allSymbols: [SFSymbol]{
-        if #available(iOS 14, *) {
+        if #available(iOS 14, macOS 14.0, *) {
             return SFSymbol.allSymbols13 + SFSymbol.allSymbols14
         } else {
             return SFSymbol.allSymbols13
